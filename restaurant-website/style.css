@@ -1,0 +1,483 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    max-width: 100%;
+}
+
+/* STYLING OF THE HEADER ie the navbar, sidebar and ist responsivness */
+header{
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(55, 8, 8);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight:bold;
+}
+
+.hearder-title{
+    color: white;
+    font-weight: 600;
+    font-family: arial black;
+    font-size: 25px;
+}
+
+.list{
+    display: flex;
+    gap: 6em;
+    
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 13px 0;
+}
+
+.hamburger-icon{
+    position: relative;
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    border: 4px;
+    top: 0;
+    background-color: rgba(119, 53, 53, 0.963);
+    z-index: 1025;
+    display: none;
+}
+
+.list-menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 25px;
+    margin: 0;
+    align-items: center;
+    padding: 90px;
+    
+}
+
+
+/*media queries for the responsive design*/
+
+/* desktop screens */
+
+@media(max-width:1000px){
+   .list{
+    gap: 60px;
+   }
+
+}
+
+@media (max-width: 954px) {
+    .list{
+        gap: 50px;
+    }
+}
+@media (max-width: 870px){
+    .list{
+        gap: 45px;
+    }
+}
+
+/* Tablet Devices */
+/* Mobile Devices */
+@media (max-width: 480px){
+    .hamburger-icon{
+        height: 11px;
+    }
+    .hearder-title{
+        font-size: 15px;
+    }
+   
+}
+
+@media (max-width:640px) {
+ .sidebar{
+        display: none;
+    }
+    .cancel-icon{
+    position: absolute;
+    right: 42px;
+    top: 30px;
+    image-rendering: optimizeQuality;
+
+}
+}
+.open .sidebar{
+    display: block;
+}
+
+.close .sidebar{
+    display: none;
+}
+@media (min-width: 640px) {
+    .sidebar{
+        display: none;
+        width: 55vw;
+        height: 100vh;
+        right: 0px;
+        border-radius: 5px;
+    }
+        .cancel-icon{
+    position: absolute;
+    right: 42px;
+    top: 18px;
+}
+    .list-menu{
+        gap: 30px;
+        position: relative;
+        top: 22px;
+    }
+}
+
+@media (max-width: 768px){
+    .list-item{
+        display: none;
+    }
+    .hamburger-icon{
+        display: flex;
+    }
+    .sidebar{
+        display: none;
+    }  
+    
+}
+
+
+/* End of mediaqueries */
+
+/* Styling the welcome page and giving a responsive design for it😋😋😋*/
+.welcome-section-body{
+    background-color: rgb(53, 31, 31);
+    position:relative;
+    bottom: auto;
+    height: 85vh
+}
+.welcome-section{
+    height: 80vh;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 6%;
+}
+
+.welcome-section-title{
+    color: rgb(255, 157, 0);
+     font-size: 35px;
+     font-family: Matura MT Script Capitals;
+}
+
+.welcome-section-heading{
+    color: white;
+    font-size: 2.1rem;
+    font-family: sans-serif;
+}
+
+.welcome-section-text{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.welcome-section-order-button, .welcome-section-contact-button{
+    background-color: rgb(255, 162, 0);
+    height: 2.9rem;
+    width: 8rem;
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: lighter; 
+    margin-top: 1.8rem;
+}
+
+.welcome-section-contact-button{
+    margin: 0 20px;
+}
+
+/* welcome section image styling 🥰 */
+ .welcome-image{
+    height: 430px;
+    width: 500px;
+} 
+
+
+/* Media queries for the welcome page🥰 */
+/* Small Mobile devices */
+@media (max-width:480px){
+    .welcome-section{
+        flex-direction: column;
+        position: relative;
+        height: 50vh;
+    }
+    .welcome-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 52%;
+        text-align: center;
+        text-wrap: balance;
+
+    }
+   .welcome-section-title{
+    font-size: 1em;
+    font-weight: 100;
+    
+   } 
+   .welcome-section-heading{
+    font-size: 0.7rem;
+   }
+   .welcome-section-text{
+    font-size: 0.8rem;
+   }
+   .welcome-section-contact-button, .welcome-section-order-button{
+    height: fit-content;
+    width: fit-content;
+    font-size: 12px;
+   }
+     
+   .welcome-section-images{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    bottom: 33vh;
+   }
+   .welcome-image{
+    height: 120px;
+    width: 130px;
+    max-width: 100%;
+   }
+
+   .welcome-section-buttons{
+    position: relative;
+    bottom: 7%;
+   }
+   .welcome-section-information{
+    margin: 2% 0;
+   }
+}
+
+@media  (min-width:481px) and (max-width:767px) {
+    .welcome-section{
+        flex-direction: column;
+        position: relative;
+        height: 60vh;
+    }
+    .welcome-section-information{
+        margin: 1% 0;
+    }
+    .welcome-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 52%;
+        text-align: center;
+        text-wrap: balance;
+    }
+   .welcome-section-title{
+    font-size: 1.2em;
+    font-weight: 100;
+    
+   } 
+   .welcome-section-heading{
+    font-size: 0.7rem;
+   }
+   .welcome-section-text{
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+   }
+   .welcome-section-contact-button, .welcome-section-order-button{
+    height: fit-content;
+    width: fit-content;
+    font-size: 12px;
+   }
+     
+   .welcome-section-images{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    bottom: 33vh;
+   }
+   .welcome-image{
+    height: 130px;
+    width: 160px;
+    max-width: 100%;
+   }
+
+   .welcome-section-buttons{
+    position: relative;
+    bottom: 11%;
+   }
+   
+}
+
+@media (min-width:767px) and (max-width:1024px) {
+    .welcome-section-title{
+        font-weight: 100;
+    }
+    .welcome-section-heading{
+        font-size: 25px;
+    }
+    .welcome-section-text{
+        font-size: 17px;
+    }
+    .welcome-image{
+        height: 260px;
+        width: 300px;
+        position: relative;
+        top: 7%;
+    }
+    .welcome-section-contact-button, .welcome-section-order-button{
+        height: 1.9rem;
+    }
+}
+/* end of the welcome section styling */
+
+
+/* The About-Us section styling */
+
+.about-us-background{
+    background: rgba(244, 244, 244, 0.909);
+    height: 95vh;
+    position: relative;
+    margin: 0;
+}
+
+ .about-us-section{
+    position: relative;
+    padding: 6% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 80vh;
+} 
+
+.about-us-information{
+    text-wrap: pretty;
+    text-align: center;
+    width: 50vw;
+}
+.about-us-title{
+    font-family: Britannic;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.about-us-text{
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+image styling */
+ .about-us-image-section{
+    position: relative;
+}
+.about-us-image{
+    border-radius: 50%;
+    height: 360px;
+    width: 375px;
+}
+.about-us-icon{
+     padding: 5px;
+     background-color: rgba(3, 147, 160, 0.146);
+     border: 2px solid rgb(255, 255, 255);
+     border-radius: 40%;
+     height: 25px;
+     width: 26px;
+}
+
+
+/* media queries for the about page */
+@media (max-width:480px){
+    .about-us-section{
+        flex-direction: column;
+    }
+    .about-us-image{
+        height: 160px;
+        width: 190px;
+    }
+    .about-us-title{
+        font-size: 19px;
+    }
+    .about-us-text{
+        font-size: 11px;
+    }
+    .about-us-information{
+        width: 90%;
+    }
+    .about-us-icon{
+        height: 20px;
+        width: 20px;
+        padding: 2px;
+        margin: 10px;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px){
+     .about-us-section{
+        flex-direction: column;
+        padding: 8% 0;
+    }
+    .about-us-image{
+        height: 180px;
+        width: 210px;
+    }
+    .about-us-title{
+        font-size: 15px;
+    }
+    .about-us-text{
+        font-size: 12px;
+    }
+    .about-us-information{
+        width: 90%;
+    }
+    .about-us-icon{
+        height: 20px;
+        width: 20px;
+        padding: 2px;
+        margin: 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+     .about-us-image{
+        height: 200px;
+        width: 230px;
+     }
+     .about-us-title{
+        font-size: 23px;
+     }
+     .about-us-text{
+        font-size: 15px;
+     }
+     .about-us-icon{
+        height: 20px;
+        width: 20px;
+        padding: 2px;
+        margin: 10px;
+     }
+}

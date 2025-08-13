@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+               <div>
+                <h3 class="hearder-title">☕Coffee</h3> 
+               </div>
+
+               <div>
+                 <ul class="list">
+                    <li class="list-item"><a href="">Home</a></li>
+                    <li class="list-item"><a href="">Menu</a></li> 
+                    <li class="list-item"><a href="">Login</a></li>
+                    <li class="list-item"><a href="">About</a></li>
+                    <li class="list-item"><a href="">Contact</a></li>
+                    <li class="list-item"><a href="">Terms</a></li>
+                    <li onclick="displaySidebar()" class="list-item hamburger-icon">
+                        <img src="img/hamburger.png" alt="Hamburger icon" height="30px">
+                    </li>
+                </ul>
+
+               </div>    
+     
+        </nav>
+    </header>
+
+    <div class="sidebar"> 
+                 <ul class="list-menu">
+                     <li onclick="displaySidebar()"  class="cancel-icon"><img src="img/cancel-icon.png" alt="cancel icon" height="25px"></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li> 
+                    <li><a href="">Login</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms</a></li>
+    </div>
+
+    <div class="welcome-section-body">
+        <div class="welcome-section">
+        <div class="welcome-text">
+            <h2 class="welcome-section-title welcome-section-information">Best Coffee</h2>
+        <h3 class="welcome-section-heading welcome-section-information">Make your day great with our<br> special coffee!</h3>
+
+        <p class="welcome-section-text welcome-section-information">Welcome to our coffee paradise, where every bean tells<br> a story and every cup sparks joy.</p>
+
+    <div class="welcome-section-buttons">
+        <button class="welcome-section-order-button">Order Now</button>
+        <button class="welcome-section-contact-button">Contact Us</button>
+    </div>
+            
+        
+        </div>
+        <div class="welcome-section-images">
+        <img class="welcome-image" src="images/coffee-hero-section.png" alt="">
+        </div>
+            
+    </div>
+    </div>
+    
+
+    <div class="about-us-background" >
+        <div class="about-us-section">
+        <div class="about-us-image-section">
+            <img id="about-us" class="about-us-image" src="images/about-image.jpg" alt="image of people eating">
+        </div>
+
+        <div class="about-us-information">
+            <h2 class="about-us-title">ABOUT US</h2>
+            <div class="about-us-text-section">
+                <p class="about-us-text">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike, We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guest can rellax, unwind and enjoy their time in comfort</p>
+            </div>
+            
+
+            <div>
+            <img class="about-us-icon" src="img/🦆 icon _facebook_.png" alt="facebook-icon">
+            <img class="about-us-icon" src="img/🦆 icon _instagram_.png" alt="instagram-icon">
+            <img class="about-us-icon" src="img/🦆 icon _twitter_.png" alt="">
+        </div>
+        </div>
+
+        
+    </div>
+    </div>
+    
+
+</body>
+</html>
